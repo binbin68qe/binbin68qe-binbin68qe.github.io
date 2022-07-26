@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="m clearfix">
+			<div class="n"></div>
+		</div>
+		<p>dasdasj</p>
+
+	</body>
+	<style>
+		.m {
+			width: 200px;
+			border: 2px blue solid;
+		}
+
+		.n {
+			width: 100px;
+			height: 100px;
+			background-color: #953D75;
+			float: left;
+		}
+
+		.clearfix:after {
+			/*伪元素是行内元素 正常浏览器清除浮动方法*/
+			content: "";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+		
+	</style>
+</html>
